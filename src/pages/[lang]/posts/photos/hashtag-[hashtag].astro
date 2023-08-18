@@ -1,0 +1,63 @@
+---
+import { getCollection } from "astro:content";
+
+import PhotosList from "@components/PhotosList.astro";
+
+import Base from "@layouts/Base.astro";
+
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+
+const { hashtag } = Astro.params;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+let allPhotos = await getCollection("photos");
+
+allPhotos = allPhotos
+  .filter((photo) => photo.data.hashtags?.includes("#" + hashtag))
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+if (allPhotos.length === 0)
+  return new Response(null, { status: 404, statusText: "Not found" });
+---
+
+<Base>
+  <main id="main-content">
+    <section class="full-width h-feed">
+      <h2 class="p-name">
+        {
+          hashtag
+            ? `${t("photos.tagged-with")} #${hashtag}`
+            : t("photos.my-photos")
+        }
+      </h2>
+
+      <PhotosList photos={allPhotos} />
+
+      {
+        hashtag && (
+          <a href={`/${lang}/posts/photos`} class="u-url u-uid">
+            {t("photos.view-all")}
+          </a>
+        )
+      }
+    </section>
+  </main>
+</Base>
+
+<style>
+  .h-feed > .u-url {
+    margin-top: 32px;
+    display: block;
+  }
+
+  .full-width {
+    padding: var(--side-padding);
+
+    & > h2 {
+      margin-inline: auto;
+      width: var(--text-content-width);
+    }
+  }
+</style>

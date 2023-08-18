@@ -1,0 +1,27 @@
+{
+  "date": "2023-04-26T12:05:10.000Z",
+  "syndications": [
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/p/Crf6vefMpV6/"
+    }
+  ],
+  "descriptions": [
+    {
+      "language": "fo",
+      "value": "Gjørdi eina kaku til flaggdagin í gjár 🇫🇴"
+    }
+  ],
+  "hashtags": [],
+  "mentions": [],
+  "images": [
+    {
+      "url": "~/assets/photos/Crf6vefMpV6-1.jpg",
+      "alt": ""
+    },
+    {
+      "url": "~/assets/photos/Crf6vefMpV6-2.jpg",
+      "alt": ""
+    }
+  ]
+}

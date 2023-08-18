@@ -1,0 +1,22 @@
+{
+  "date": "2022-11-18T16:02:03.000Z",
+  "syndications": [
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/p/ClG7dTeMgI_/"
+    }
+  ],
+  "descriptions": [
+    {
+      "language": "fo",
+      "value": "Fylt epli í stylinum av hvítleyksbreyði"
+    }
+  ],
+  "hashtags": ["#loadedpotato", "#food", "#sortedfood"],
+  "images": [
+    {
+      "url": "~/assets/photos/ClG7dTeMgI_.jpg",
+      "alt": ""
+    }
+  ]
+}

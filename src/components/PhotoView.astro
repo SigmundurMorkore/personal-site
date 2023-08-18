@@ -1,0 +1,125 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { Image } from "astro:assets";
+
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+
+export interface Props {
+  photo: CollectionEntry<"photos">;
+}
+
+const { photo } = Astro.props;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const dateTimeFormat = new Intl.DateTimeFormat(lang, {
+  dateStyle: "long",
+  timeStyle: "short",
+});
+
+const data = photo.data;
+const { date, images, descriptions, hashtags, mentions, syndications } =
+  photo.data;
+
+const description =
+  descriptions?.find((description) => description.language === lang) ??
+  descriptions?.at(0);
+
+const langAttribute =
+  description?.language !== lang ? description?.language : undefined;
+---
+
+<section class="h-entry">
+  <h1>
+    {t("photos.picture-for-date")}{" "}
+    <time datetime={date.toISOString()} class="dt-published">
+      {dateTimeFormat.format(date)}
+    </time>
+  </h1>
+
+  <p lang={langAttribute} class="p-content">
+    {description?.value}
+  </p>
+
+  {
+    (hashtags?.length ?? 0) > 0 && (
+      <ul class="hashtags">
+        {hashtags?.map((hashtag) => (
+          <li>
+            <a
+              href={`/${lang}/posts/photos/hashtag-${hashtag.replace("#", "")}`}
+              class="p-category"
+            >
+              {hashtag}
+            </a>
+          </li>
+        ))}
+      </ul>
+    )
+  }
+
+  {
+    (mentions?.length ?? 0) > 0 && (
+      <ul class="mentions">
+        {mentions?.map((mention) => (
+          <li>
+            <a href={mention.url} target="_blank" class="u-category h-card">
+              {mention.handle}
+            </a>
+          </li>
+        ))}
+      </ul>
+    )
+  }
+  <!-- CupkR53LC-cover -->
+  {
+    images.map((image, index) => {
+      let viewtransitionName = "";
+      if (index === 0) viewtransitionName = photo.id + "-cover";
+
+      return (
+        <Image
+          src={image.url}
+          alt={image.alt}
+          class="u-photo"
+          transition:name={viewtransitionName}
+          data-trans={viewtransitionName}
+        />
+      );
+    })
+  }
+
+  {
+    (syndications?.length ?? 0) > 0 && (
+      <ul>
+        {syndications?.map((syndication) => (
+          <li>
+            <a
+              href={syndication.url}
+              target="_blank"
+              rel="syndication"
+              class="u-syndication"
+            >
+              {t("photos.syndicated-on")}{" "}
+              {syndication.platform.charAt(0).toLocaleUpperCase() +
+                syndication.platform.slice(1)}
+            </a>
+          </li>
+        ))}
+      </ul>
+    )
+  }
+</section>
+
+<style>
+  .hashtags,
+  .mentions {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 6px;
+    margin: 0 0 32px 0;
+    padding: 0;
+  }
+</style>

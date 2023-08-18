@@ -1,0 +1,38 @@
+{
+  "date": "2023-03-31T12:07:06.000Z",
+  "syndications": [
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/p/Cqc-S5EM8Eo/"
+    }
+  ],
+  "descriptions": [
+    {
+      "language": "fo",
+      "value": "Kokus dahl við broyski skalottuleyki"
+    },
+    {
+      "language": "en",
+      "value": "Coconut Dhal with Crispy Shallots"
+    }
+  ],
+  "hashtags": [
+    "#coconutdahl",
+    "#coconut",
+    "#dahl",
+    "#crispyshallots",
+    "#shallots",
+    "#food",
+    "#sidekickchallenge",
+    "#sortedfood"
+  ],
+  "mentions": [
+    { "handle": "@sortedfood", "url": "https://www.instagram.com/sortedfood/" }
+  ],
+  "images": [
+    {
+      "url": "~/assets/photos/Cqc-S5EM8Eo.jpg",
+      "alt": ""
+    }
+  ]
+}

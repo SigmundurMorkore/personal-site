@@ -1,0 +1,29 @@
+{
+  "date": "2022-12-13T12:46:58.000Z",
+  "syndications": [
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/p/CmG9AahMmBU/"
+    }
+  ],
+  "descriptions": [
+    {
+      "language": "fo",
+      "value": "Terta við krydda søteplir og bláan ost"
+    }
+  ],
+  "hashtags": [
+    "#tart",
+    "#bluecheese",
+    "#sweetpotato",
+    "#food",
+    "#sortedfood",
+    "#sidekickchallenge"
+  ],
+  "images": [
+    {
+      "url": "~/assets/photos/CmG9AahMmBU.jpg",
+      "alt": ""
+    }
+  ]
+}

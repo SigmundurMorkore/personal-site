@@ -1,0 +1,58 @@
+---
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<footer>
+  <div class="wrapper">
+    <section>
+      <h2>{t("footer.find-me")}</h2>
+      <ul>
+        <li>
+          <a href="https://github.com/SigmundurMorkore" target="_blank" rel="me"
+            >@SigmundurMorkore {t("footer.on")}
+            <span translate="no">GitHub</span></a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/sigmundurmorkore/"
+            target="_blank"
+            rel="me"
+            >@sigmundurmorkore {t("footer.on")}
+            <span translate="no">Instagram</span></a
+          >
+        </li>
+        <li>
+          <a href={`mailto:${t("contact-email")}`} rel="me"
+            >{t("contact-email")}</a
+          >
+        </li>
+      </ul>
+    </section>
+  </div>
+</footer>
+
+<style>
+  footer {
+    display: flex;
+    margin: 0 var(--side-padding) 32px;
+    font-size: 14px;
+  }
+
+  .wrapper {
+  }
+
+  h2 {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+  }
+</style>

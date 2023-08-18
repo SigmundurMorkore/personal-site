@@ -1,0 +1,37 @@
+{
+  "date": "2023-05-18T12:53:27.000Z",
+  "syndications": [
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/p/CsYpwZ1Muyc/"
+    }
+  ],
+  "descriptions": [
+    {
+      "language": "fo",
+      "value": "Panko stokt brokkoli og kuskus við dressing úr bláum osti"
+    },
+    {
+      "language": "en",
+      "value": "Panko Roast Broccoli and Couscous with Blue Cheese Dressing"
+    }
+  ],
+  "hashtags": [
+    "#panko",
+    "#broccoli",
+    "#kuskus",
+    "#bluecheese",
+    "#bluecheesedressing",
+    "#sortedfood",
+    "#sidekickchallenge"
+  ],
+  "mentions": [
+    { "handle": "@sortedfood", "url": "https://www.instagram.com/sortedfood/" }
+  ],
+  "images": [
+    {
+      "url": "~/assets/photos/CsYpwZ1Muyc.jpg",
+      "alt": ""
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "date": "date",
+  "syndications": [
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/p/replace/"
+    }
+  ],
+  "descriptions": [{ "language": "fo", "value": "" }],
+  "hashtags": [],
+  "mentions": [
+    {
+      "handle": "@sortedsidekick",
+      "url": "https://www.instagram.com/sortedsidekick/"
+    },
+    { "handle": "@sortedfood", "url": "https://www.instagram.com/sortedfood/" }
+  ],
+  "images": [
+    {
+      "url": "~/assets/photos/replace.jpg",
+      "alt": ""
+    }
+  ]
+}

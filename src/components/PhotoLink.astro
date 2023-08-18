@@ -1,0 +1,121 @@
+---
+import { Image } from "astro:assets";
+
+import { getLangFromUrl } from "@i18n/utils";
+
+export interface Props {
+  href: string;
+  target?: string | null;
+  rel?: string | null;
+  className?: string | null;
+  captionClass?: string | null;
+  name?:
+    | {
+        language: string;
+        value: string;
+      }
+    | undefined;
+  image: {
+    src: string;
+    width: number;
+    height: number;
+    format: "png" | "jpg" | "jpeg" | "tiff" | "webp" | "gif" | "svg";
+  };
+  alt?: string | null;
+  viewtransitionId?: string | null;
+}
+
+const {
+  href,
+  target = null,
+  rel = null,
+  name = null,
+  image,
+  alt = null,
+  className = null,
+  captionClass = null,
+  viewtransitionId,
+} = Astro.props;
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<a href={href} target={target} rel={rel} class={className}>
+  <figure>
+    <Image
+      src={image}
+      alt={alt}
+      width={540}
+      height={540}
+      transition:name={viewtransitionId + "-cover"}
+      data-trans={viewtransitionId + "-cover"}
+    />
+    {
+      name !== null &&
+        (name.language === lang ? (
+          <figcaption>
+            <span class={`max-lines ${captionClass}`}>{name.value}</span>
+          </figcaption>
+        ) : (
+          <figcaption lang={name.language}>
+            <span class={`max-lines ${captionClass}`}>{name.value}</span>
+          </figcaption>
+        ))
+    }
+  </figure>
+</a>
+
+<style>
+  :any-link {
+    text-decoration: inherit;
+    color: inherit;
+    display: block;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+
+    &:hover,
+    &:focus-visible {
+      text-shadow: unset;
+
+      & figure {
+        box-shadow: 0px 0px 24px 0px var(--nice-blue);
+        border: solid 3px var(--nice-blue);
+      }
+    }
+  }
+
+  figure {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    box-shadow: 0px 0px 12px 0px var(--nice-pink);
+    border: solid 3px var(--nice-pink);
+    border-radius: 10px;
+    overflow: hidden;
+
+    transition: 250ms ease;
+  }
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  figcaption {
+    position: absolute;
+    inset: 100% 0;
+    transform: translateY(-100%);
+    background-color: hsl(0, 0%, 0% / 75%);
+    color: white;
+    height: fit-content;
+    width: 100%;
+    padding: 8px 16px;
+    font-size: 18px;
+    line-height: 1.25;
+  }
+</style>

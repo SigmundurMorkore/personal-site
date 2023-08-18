@@ -1,0 +1,32 @@
+{
+  "date": "2023-01-18T11:56:12.000Z",
+  "syndications": [
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/p/Cnjj0EXsMII/"
+    }
+  ],
+  "descriptions": [
+    {
+      "language": "fo",
+      "value": "Medistari við eplamorlið og heimagjørdum reyðvíns sós við reyðleykið"
+    }
+  ],
+  "hashtags": [
+    "#bangersandmash",
+    "#mashedpotatoes",
+    "#redwinesauce",
+    "#redonion",
+    "#sortedfood",
+    "#sidekickchallenge"
+  ],
+  "mentions": [
+    { "handle": "@sortedfood", "url": "https://www.instagram.com/sortedfood/" }
+  ],
+  "images": [
+    {
+      "url": "~/assets/photos/Cnjj0EXsMII.jpg",
+      "alt": ""
+    }
+  ]
+}

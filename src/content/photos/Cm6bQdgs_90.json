@@ -1,0 +1,29 @@
+{
+  "date": "2023-01-02T12:32:34.000Z",
+  "syndications": [
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/p/Cm6bQdgs_90/"
+    }
+  ],
+  "descriptions": [
+    { "language": "fo", "value": "Pasta við purrum og roykt flesk" }
+  ],
+  "hashtags": [
+    "#pasta",
+    "#leek",
+    "#bacon",
+    "#food",
+    "#sidekickchallenge",
+    "#sortedfood"
+  ],
+  "mentions": [
+    { "handle": "@sortedfood", "url": "https://www.instagram.com/sortedfood/" }
+  ],
+  "images": [
+    {
+      "url": "~/assets/photos/Cm6bQdgs_90.jpg",
+      "alt": ""
+    }
+  ]
+}

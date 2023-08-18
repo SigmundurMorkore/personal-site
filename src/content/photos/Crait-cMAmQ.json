@@ -1,0 +1,42 @@
+{
+  "date": "2023-04-24T09:59:03.000Z",
+  "syndications": [
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/p/Crait-cMAmQ/"
+    }
+  ],
+  "descriptions": [
+    {
+      "language": "fo",
+      "value": "Kókaðar grønar linsur við stoktum eggji"
+    },
+    {
+      "language": "en",
+      "value": "Spring Braised Lentils with Fried Eggs"
+    }
+  ],
+  "hashtags": [
+    "#springveg",
+    "#lentils",
+    "#greenlentils",
+    "#friedegg",
+    "#eggs",
+    "#food",
+    "#sortedfood",
+    "#sidekickchallenge"
+  ],
+  "mentions": [
+    { "handle": "@sortedfood", "url": "https://www.instagram.com/sortedfood/" }
+  ],
+  "images": [
+    {
+      "url": "~/assets/photos/Crait-cMAmQ-1.jpg",
+      "alt": ""
+    },
+    {
+      "url": "~/assets/photos/Crait-cMAmQ-2.jpg",
+      "alt": ""
+    }
+  ]
+}

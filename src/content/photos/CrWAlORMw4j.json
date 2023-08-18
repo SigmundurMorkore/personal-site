@@ -1,0 +1,37 @@
+{
+  "date": "2023-04-22T15:43:47.000Z",
+  "syndications": [
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/p/CrWAlORMw4j/"
+    }
+  ],
+  "descriptions": [
+    {
+      "language": "fo",
+      "value": "Bakaður toskur við gochujang eplir og edamame bønir"
+    }
+  ],
+  "hashtags": [
+    "#cod",
+    "#bakedcod",
+    "#gochujang",
+    "#springveg",
+    "#food",
+    "#sidekickchallenge",
+    "#sortedfood"
+  ],
+  "mentions": [
+    { "handle": "@sortedfood", "url": "https://www.instagram.com/sortedfood/" }
+  ],
+  "images": [
+    {
+      "url": "~/assets/photos/CrWAlORMw4j-1.jpg",
+      "alt": ""
+    },
+    {
+      "url": "~/assets/photos/CrWAlORMw4j-2.jpg",
+      "alt": ""
+    }
+  ]
+}

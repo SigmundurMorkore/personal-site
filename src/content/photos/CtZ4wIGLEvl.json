@@ -1,0 +1,49 @@
+{
+  "date": "2023-06-12T20:55:08.000Z",
+  "syndications": [
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/p/CtZ4wIGLEvl/"
+    }
+  ],
+  "descriptions": [
+    {
+      "language": "fo",
+      "value": "Blómkál steikt við kili omaná miso crème fraîche og \"heilaða tríeindin\" (várleyk, hvítleyk, og ingifer)."
+    },
+    {
+      "language": "en",
+      "value": "Chilli Roast Cauliflower on top of miso crème fraîche and the Holy Trinity (spring onions, garlic, and ginger)"
+    }
+  ],
+  "hashtags": [
+    "#chili",
+    "#roastcauliflower",
+    "#miso",
+    "#cremefraiche",
+    "#holytrinity",
+    "#springonion",
+    "#garlic",
+    "#ginger",
+    "#food",
+    "#sortedfood",
+    "#sidekickchallenge"
+  ],
+  "mentions": [
+    {
+      "handle": "@sortedsidekick",
+      "url": "https://www.instagram.com/sortedsidekick/"
+    },
+    { "handle": "@sortedfood", "url": "https://www.instagram.com/sortedfood/" }
+  ],
+  "images": [
+    {
+      "url": "~/assets/photos/CtZ4wIGLEvl-1.jpg",
+      "alt": ""
+    },
+    {
+      "url": "~/assets/photos/CtZ4wIGLEvl-2.jpg",
+      "alt": ""
+    }
+  ]
+}

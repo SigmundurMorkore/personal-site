@@ -1,0 +1,49 @@
+---
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const url = Astro.url;
+const langSwitchUrl = url.pathname.replace(
+  `/${lang}`,
+  `/${t("header.switch.lang")}`
+);
+---
+
+<header>
+  <a href="#main-content" class="skip-to-main-content-link"
+    >{t("header.skip")}</a
+  >
+  <a href={"/" + lang}>{t("header.home")}</a>
+  <a
+    href={langSwitchUrl}
+    hreflang={"/" + t("header.switch.lang")}
+    lang={t("header.switch.lang")}>{t("header.switch.text")}</a
+  >
+</header>
+
+<style>
+  header {
+    display: flex;
+    gap: 24px;
+    padding: 25px var(--side-padding) 0;
+  }
+
+  .skip-to-main-content-link {
+    border: solid 3px var(--nice-pink);
+    background-color: black;
+    box-shadow: 0px 0px 12px 0px var(--nice-pink);
+    height: 30px;
+    left: 0%;
+    padding: 8px;
+    position: absolute;
+    transform: translateY(calc(-100% - 12px - 25px));
+    transition: transform 0.3s;
+
+    &:focus {
+      transform: translateY(0%);
+      outline-offset: 3px;
+    }
+  }
+</style>

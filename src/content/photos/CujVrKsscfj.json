@@ -1,0 +1,46 @@
+{
+  "date": "2023-07-11T09:32:25.000Z",
+  "syndications": [
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/p/CujVrKsscfj/"
+    }
+  ],
+  "descriptions": [
+    {
+      "language": "fo",
+      "value": "Eplir stokt saman við bacon omaná purée úr bønum"
+    },
+    {
+      "language": "en",
+      "value": "Bacon Roast New Potatoes with Fava Bean Puree"
+    }
+  ],
+  "hashtags": [
+    "#bacon",
+    "#baconpotatoes",
+    "#potato",
+    "#potatoes",
+    "#beanpuree",
+    "#food",
+    "#sidekickchallenge",
+    "#sortedfood"
+  ],
+  "mentions": [
+    {
+      "handle": "@sortedsidekick",
+      "url": "https://www.instagram.com/sortedsidekick/"
+    },
+    { "handle": "@sortedfood", "url": "https://www.instagram.com/sortedfood/" }
+  ],
+  "images": [
+    {
+      "url": "~/assets/photos/CujVrKsscfj-1.jpg",
+      "alt": ""
+    },
+    {
+      "url": "~/assets/photos/CujVrKsscfj-2.jpg",
+      "alt": ""
+    }
+  ]
+}

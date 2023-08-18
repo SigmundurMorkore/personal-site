@@ -1,0 +1,32 @@
+---
+import Base from "@layouts/Base.astro";
+
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<script>
+  const div = document.querySelector(".test");
+  if (div) {
+    div.textContent = document.URL;
+  }
+</script>
+
+<Base>
+  <main id="main-content">
+    <div>Javascript (document.URL)</div>
+    <div class="test"></div>
+
+    <br />
+
+    <div>Astro.request.url</div>
+    <div>{Astro.request.url}</div>
+
+    <br />
+
+    <div>Astro.url</div>
+    <div>{Astro.url}</div>
+  </main>
+</Base>

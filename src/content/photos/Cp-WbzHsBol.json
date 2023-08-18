@@ -1,0 +1,39 @@
+{
+  "date": "2023-03-19T14:41:35.000Z",
+  "syndications": [
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/p/Cp-WbzHsBol/"
+    }
+  ],
+  "descriptions": [
+    {
+      "language": "fo",
+      "value": "Franskt toast við ostið og snerktum svampum\nCiabatta breyð dyppa í egg, sindur av mjólki, ostið og salt+pipar og síðani stokt á pannuni. Breyðið er toppa við snerktum svampum og syrupp gjørt úr sugur, súrepla eddiku, og kili flakum. Undir øllum er spinat og avokado."
+    }
+  ],
+  "hashtags": [
+    "#cheesyfrenchtoast",
+    "#frenchtoast",
+    "#crispymushroom",
+    "#mushrooms",
+    "#homemadesyrup",
+    "#spinachavocadosalad",
+    "#food",
+    "#sortedfood",
+    "#sidekickchallenge"
+  ],
+  "mentions": [
+    { "handle": "@sortedfood", "url": "https://www.instagram.com/sortedfood/" }
+  ],
+  "images": [
+    {
+      "url": "~/assets/photos/Cp-WbzHsBol-1.jpg",
+      "alt": ""
+    },
+    {
+      "url": "~/assets/photos/Cp-WbzHsBol-2.jpg",
+      "alt": ""
+    }
+  ]
+}

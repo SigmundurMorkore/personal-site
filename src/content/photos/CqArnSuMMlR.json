@@ -1,0 +1,35 @@
+{
+  "date": "2023-03-20T12:25:08.000Z",
+  "syndications": [
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/p/CqArnSuMMlR/"
+    }
+  ],
+  "descriptions": [
+    { "language": "fo", "value": "Knassandi gnocchi \"Patatas Bravas\"" }
+  ],
+  "hashtags": [
+    "#gnocchi",
+    "#patatasbravas",
+    "#tomatosauce",
+    "#homemadegarlicmayo",
+    "#garlicmayo",
+    "#food",
+    "#sidekickchallenge",
+    "#sortedfood"
+  ],
+  "mentions": [
+    { "handle": "@sortedfood", "url": "https://www.instagram.com/sortedfood/" }
+  ],
+  "images": [
+    {
+      "url": "~/assets/photos/CqArnSuMMlR-1.jpg",
+      "alt": ""
+    },
+    {
+      "url": "~/assets/photos/CqArnSuMMlR-2.jpg",
+      "alt": ""
+    }
+  ]
+}

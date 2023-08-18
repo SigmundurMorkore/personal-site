@@ -1,0 +1,46 @@
+{
+  "date": "2023-03-29T11:03:37.000Z",
+  "syndications": [
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/p/CqXtcH8sbIH/"
+    }
+  ],
+  "descriptions": [
+    {
+      "language": "fo",
+      "value": "Snerktar svampur og jarðnøta stoktar rís nudlir"
+    },
+    {
+      "language": "en",
+      "value": "Crispy Mushroom and Peanut Fried Rice Noodles"
+    }
+  ],
+  "hashtags": [
+    "#ricenoodles",
+    "#peanutfried",
+    "#crispymushroom",
+    "#mushrooms",
+    "#mushroomricenoodles",
+    "#food",
+    "#sidekickchallenge",
+    "#sortedfood"
+  ],
+  "mentions": [
+    { "handle": "@sortedfood", "url": "https://www.instagram.com/sortedfood/" }
+  ],
+  "images": [
+    {
+      "url": "~/assets/photos/CqXtcH8sbIH-1.jpg",
+      "alt": ""
+    },
+    {
+      "url": "~/assets/photos/CqXtcH8sbIH-2.jpg",
+      "alt": ""
+    },
+    {
+      "url": "~/assets/photos/CqXtcH8sbIH-3.jpg",
+      "alt": ""
+    }
+  ]
+}

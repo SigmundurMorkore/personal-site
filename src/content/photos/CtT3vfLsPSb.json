@@ -1,0 +1,42 @@
+{
+  "date": "2023-06-10T12:50:51.000Z",
+  "syndications": [
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/p/CtT3vfLsPSb/"
+    }
+  ],
+  "descriptions": [
+    {
+      "language": "fo",
+      "value": "Summar grýturættur við snerktar breyðbitar kryddaðar við dukkah krydd.\nÍ grýturættinum er várleykur, squash, asparagus, og smør bønir."
+    },
+    {
+      "language": "en",
+      "value": "Summer Stew with Dukkah Croutons"
+    }
+  ],
+  "hashtags": [
+    "#summerstew",
+    "#summer",
+    "#dukkah",
+    "#dukkahcroutons",
+    "#croutons",
+    "#food",
+    "#sidekickchallenge",
+    "#sortedfood"
+  ],
+  "mentions": [
+    {
+      "handle": "@sortedsidekick",
+      "url": "https://www.instagram.com/sortedsidekick/"
+    },
+    { "handle": "@sortedfood", "url": "https://www.instagram.com/sortedfood/" }
+  ],
+  "images": [
+    {
+      "url": "~/assets/photos/CtT3vfLsPSb.jpg",
+      "alt": ""
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "date": "2022-09-23T12:02:31.000Z",
+  "syndications": [
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/p/Ci2Th_VM6bU/"
+    }
+  ],
+  "descriptions": [
+    {
+      "language": "fo",
+      "value": "Vegetar rættur við orzo, brokkoli, og cheddarost (bæði í orzo og knæssandi omaná)"
+    }
+  ],
+  "hashtags": [
+    "#matur",
+    "#food",
+    "#vegetarian",
+    "#orzo",
+    "#brokkoli",
+    "#cheddar"
+  ],
+  "images": [
+    {
+      "url": "~/assets/photos/Ci2Th_VM6bU.jpg",
+      "alt": ""
+    }
+  ]
+}

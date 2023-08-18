@@ -1,0 +1,22 @@
+{
+  "date": "2022-11-23T15:29:40.000Z",
+  "syndications": [
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/p/ClTvui8MKct/"
+    }
+  ],
+  "descriptions": [
+    {
+      "language": "fo",
+      "value": "Krydda epli og spinat suppu við snerkt grillost"
+    }
+  ],
+  "hashtags": ["#soup", "#potatosoup", "#potatochips", "#sortedfood", "#food"],
+  "images": [
+    {
+      "url": "~/assets/photos/ClTvui8MKct.jpg",
+      "alt": ""
+    }
+  ]
+}

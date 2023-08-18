@@ -1,0 +1,60 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+
+import PhotoLink from "./PhotoLink.astro";
+
+export interface Props {
+  photos: CollectionEntry<"photos">[];
+}
+
+const { photos = [] } = Astro.props;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<ol>
+  {
+    photos.map((photo, index) => {
+      const description =
+        photo.data.descriptions?.find(
+          (description) => description.language === lang
+        ) ?? photo.data.descriptions?.at(0);
+
+      const date = photo.data.date;
+      const year = date.getUTCFullYear();
+      const month = date.getUTCMonth() + 1;
+      const dayOfMonth = date.getUTCDate();
+      const hours = date.getUTCHours();
+      const minutes = date.getUTCMinutes();
+
+      return (
+        <li class="h-entry">
+          <PhotoLink
+            href={`/${lang}/posts/photos/${year}/${month}/${dayOfMonth}/${hours}/${minutes}`}
+            image={photo.data.images[0].url}
+            alt={photo.data.images[0].alt}
+            name={description}
+            className="u-url"
+            captionClass="p-content"
+            viewtransitionId={photo.id}
+          />
+        </li>
+      );
+    })
+  }
+</ol>
+
+<style>
+  ol {
+    display: grid;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    grid-template-columns: repeat(auto-fill, minmax(248px, 1fr));
+    gap: 24px;
+  }
+</style>

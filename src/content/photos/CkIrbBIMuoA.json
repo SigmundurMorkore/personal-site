@@ -1,0 +1,22 @@
+{
+  "date": "2022-10-25T11:49:01.000Z",
+  "syndications": [
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/p/CkIrbBIMuoA/"
+    }
+  ],
+  "descriptions": [
+    {
+      "language": "fo",
+      "value": "Grillspjót við høsnakjøt, rís og súltaðar agurk strimlar"
+    }
+  ],
+  "hashtags": ["#yakitori"],
+  "images": [
+    {
+      "url": "~/assets/photos/CkIrbBIMuoA.jpg",
+      "alt": ""
+    }
+  ]
+}

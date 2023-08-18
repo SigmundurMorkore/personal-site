@@ -1,0 +1,48 @@
+{
+  "date": "2023-05-22T12:20:58.000Z",
+  "syndications": [
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/p/Csi5N_dMyKK/"
+    }
+  ],
+  "descriptions": [
+    {
+      "language": "fo",
+      "value": "Halloumi steikt við sterkum hunangi afturvið piparfrukt steikt rís"
+    },
+    {
+      "language": "en",
+      "value": "Hot Honey Halloumi with Red Pepper Fried Rice"
+    }
+  ],
+  "hashtags": [
+    "#hothoney",
+    "#honey",
+    "#spicyhoney",
+    "#halloumi",
+    "#honeyhalloumi",
+    "#pepperfriedrice",
+    "#redpepper",
+    "#redbellpepper",
+    "#bellpepper",
+    "#friedrice",
+    "#rice",
+    "#food",
+    "#sortedfood",
+    "#sidekickchallenge"
+  ],
+  "mentions": [
+    {
+      "handle": "@sortedsidekick",
+      "url": "https://www.instagram.com/sortedsidekick/"
+    },
+    { "handle": "@sortedfood", "url": "https://www.instagram.com/sortedfood/" }
+  ],
+  "images": [
+    {
+      "url": "~/assets/photos/Csi5N_dMyKK.jpg",
+      "alt": ""
+    }
+  ]
+}

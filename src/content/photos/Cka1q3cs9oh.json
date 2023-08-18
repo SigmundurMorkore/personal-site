@@ -1,0 +1,19 @@
+{
+  "date": "2022-11-01T13:04:53.000Z",
+  "syndications": [
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/p/Cka1q3cs9oh/"
+    }
+  ],
+  "descriptions": [
+    { "language": "fo", "value": "Ein skjót men lekkur fiskasuppa" }
+  ],
+  "hashtags": ["#food", "#matur", "#fishsoup"],
+  "images": [
+    {
+      "url": "~/assets/photos/Cka1q3cs9oh.jpg",
+      "alt": ""
+    }
+  ]
+}

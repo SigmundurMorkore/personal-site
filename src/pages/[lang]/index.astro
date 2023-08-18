@@ -1,0 +1,42 @@
+---
+import { getCollection } from "astro:content";
+
+import ENHCard from "@components/en/HCard.astro";
+import FOHCard from "@components/fo/HCard.astro";
+import PhotosList from "@components/PhotosList.astro";
+
+import Base from "@layouts/Base.astro";
+
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const allPhotos = (await getCollection("photos")).sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime()
+);
+---
+
+<Base>
+  <main id="main-content">
+    {lang === "en" ? <ENHCard /> : <FOHCard />}
+
+    <section class="full-width h-feed">
+      <h2 class="p-name">{t("photos.my-photos")}</h2>
+      <a class="u-url" href={`/${lang}/posts/photos`} tabindex="-1"></a>
+
+      <PhotosList photos={allPhotos} />
+    </section>
+  </main>
+</Base>
+
+<style>
+  .full-width {
+    padding: var(--side-padding);
+
+    & > h2 {
+      margin-inline: auto;
+      width: var(--text-content-width);
+    }
+  }
+</style>

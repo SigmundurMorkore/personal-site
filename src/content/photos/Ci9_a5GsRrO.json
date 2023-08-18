@@ -1,0 +1,22 @@
+{
+  "date": "2022-09-26T11:40:43.000Z",
+  "syndications": [
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/p/Ci9_a5GsRrO/"
+    }
+  ],
+  "descriptions": [
+    {
+      "language": "fo",
+      "value": "So var tað burgara við oksakjøt, súltareyðleyk, cherry tomatir og heimagjørda avokadosós"
+    }
+  ],
+  "hashtags": ["#matur", "#food", "#burger"],
+  "images": [
+    {
+      "url": "~/assets/photos/Ci9_a5GsRrO.jpg",
+      "alt": ""
+    }
+  ]
+}

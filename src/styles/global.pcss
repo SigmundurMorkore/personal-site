@@ -1,0 +1,148 @@
+@custom-selector :--heading h1, h2, h3, h4, h5, h6;
+
+/* atkinson-hyperlegible-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Atkinson Hyperlegible';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/atkinson-hyperlegible-v11-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* atkinson-hyperlegible-italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Atkinson Hyperlegible';
+  font-style: italic;
+  font-weight: 400;
+  src: url('/fonts/atkinson-hyperlegible-v11-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* atkinson-hyperlegible-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Atkinson Hyperlegible';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/atkinson-hyperlegible-v11-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* atkinson-hyperlegible-700italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Atkinson Hyperlegible';
+  font-style: italic;
+  font-weight: 700;
+  src: url('/fonts/atkinson-hyperlegible-v11-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* neonderthaw-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Neonderthaw';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/neonderthaw-v3-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family-primary: "Atkinson Hyperlegible";
+  --font-family-secondary: "Neonderthaw";
+
+  --nice-pink: #fd5da8;
+  --nice-blue: #6efdff;
+
+  --side-padding: 20px;
+  --text-content-width: min(840px, calc(100vw - (var(--side-padding) * 2)));
+}
+
+body {
+	font-family: var(--font-family-primary), sans-serif;
+	margin: auto;
+	text-align: left;
+	background-color: #000;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	line-height: 1.5;
+	color: #eee;
+  font-size: 24px;
+}
+:where(:--heading,
+strong,
+b) {
+	color: #fff;
+}
+nav a {
+	margin-right: 10px;
+}
+textarea {
+	width: 100%;
+	font-size: 16px;
+}
+input {
+	font-size: 16px;
+}
+content {
+	line-height: 1.6;
+}
+table {
+	width: 100%;
+}
+:where(img) {
+	max-width: 100%;
+	height: auto;
+}
+code {
+	padding: 2px 5px;
+	background-color: #121212;
+}
+pre {
+	padding: 1rem;
+}
+pre > code {
+	all: unset;
+}
+blockquote {
+	border: 1px solid #999;
+	color: #eee;
+	padding: 2px 0px 2px 20px;
+	margin: 0px;
+	font-style: italic;
+}
+
+:any-link {
+  color: var(--nice-blue);
+  transition: text-shadow 250ms ease;
+
+  &:hover, &:focus {
+    transition: text-shadow 150ms ease;
+    text-shadow: 0px 0px 12px var(--nice-blue);
+  }
+}
+
+p + p {
+  margin-top: 19px;
+}
+
+:focus {
+  outline: solid 3px var(--nice-blue);
+  outline-offset: 3px;
+}
+
+::selection {
+  background-color: var(--nice-blue);
+  color: black
+}
+
+.max-lines {
+  --max-lines: 2;
+
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: var(--max-lines);
+}

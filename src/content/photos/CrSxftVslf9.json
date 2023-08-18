@@ -1,0 +1,41 @@
+{
+  "date": "2023-04-21T09:34:15.000Z",
+  "syndications": [
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/p/CrSxftVslf9/"
+    }
+  ],
+  "descriptions": [
+    {
+      "language": "fo",
+      "value": "Roykt flesk, purru og epla frittata við rukkola salat"
+    }
+  ],
+  "hashtags": [
+    "#bacon",
+    "#leek",
+    "#potato",
+    "#frittata",
+    "#rucola",
+    "#rocket",
+    "#salad",
+    "#potatofrittata",
+    "#food",
+    "#sidekickchallenge",
+    "#sortedfood"
+  ],
+  "mentions": [
+    { "handle": "@sortedfood", "url": "https://www.instagram.com/sortedfood/" }
+  ],
+  "images": [
+    {
+      "url": "~/assets/photos/CrSxftVslf9-1.jpg",
+      "alt": ""
+    },
+    {
+      "url": "~/assets/photos/CrSxftVslf9-2.jpg",
+      "alt": ""
+    }
+  ]
+}

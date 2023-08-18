@@ -1,0 +1,32 @@
+{
+  "date": "2022-12-20T11:53:00.000Z",
+  "syndications": [
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/p/CmY4ZSwsNH6/"
+    }
+  ],
+  "descriptions": [
+    {
+      "language": "fo",
+      "value": "Skalottuleykur steikt í balsamiko og hunang við gnocchi steikt við rósmarin og ein breyð sós afturvið"
+    }
+  ],
+  "hashtags": [
+    "#shallot",
+    "#shallots",
+    "#gnocchi",
+    "#breadsauce",
+    "#sortedfood",
+    "#sidekickchallenge"
+  ],
+  "mentions": [
+    { "handle": "@sortedfood", "url": "https://www.instagram.com/sortedfood/" }
+  ],
+  "images": [
+    {
+      "url": "~/assets/photos/CmY4ZSwsNH6.jpg",
+      "alt": ""
+    }
+  ]
+}
