@@ -2,15 +2,6 @@ import { defineCollection, z } from "astro:content";
 
 import { ui } from "@i18n/ui";
 
-const blogCollection = defineCollection({
-  type: "content",
-  schema: z.object({
-    title: z.string(),
-    author: z.string(),
-    date: z.date(),
-  }),
-});
-
 const syndication = z.object({
   platform: z.enum(["instagram"]),
   url: z.string().url(),
@@ -54,6 +45,5 @@ const photosCollection = defineCollection({
 });
 
 export const collections = {
-  blog: blogCollection,
   photos: photosCollection,
 };
