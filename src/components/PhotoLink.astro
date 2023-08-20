@@ -41,15 +41,8 @@ const lang = getLangFromUrl(Astro.url);
 ---
 
 <a href={href} target={target} rel={rel} class={className}>
-  <figure>
-    <Image
-      src={image}
-      alt={alt}
-      width={540}
-      height={540}
-      transition:name={viewtransitionId + "-cover"}
-      data-trans={viewtransitionId + "-cover"}
-    />
+  <figure transition:name={viewtransitionId + "-cover"}>
+    <Image src={image} alt={alt} width={540} height={540} />
     {
       name !== null &&
         (name.language === lang ? (

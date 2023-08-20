@@ -15,7 +15,7 @@ const langSwitchUrl = url.pathname.replace(
   <a href="#main-content" class="skip-to-main-content-link"
     >{t("header.skip")}</a
   >
-  <a href={"/" + lang}>{t("header.home")}</a>
+  <a href={"/" + lang} rel="author">{t("header.home")}</a>
   <a
     href={langSwitchUrl}
     hreflang={"/" + t("header.switch.lang")}

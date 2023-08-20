@@ -18,7 +18,6 @@ const dateTimeFormat = new Intl.DateTimeFormat(lang, {
   timeStyle: "short",
 });
 
-const data = photo.data;
 const { date, images, descriptions, hashtags, mentions, syndications } =
   photo.data;
 
@@ -28,17 +27,28 @@ const description =
 
 const langAttribute =
   description?.language !== lang ? description?.language : undefined;
+
+const year = date.getUTCFullYear();
+const month = date.getUTCMonth() + 1;
+const dayOfMonth = date.getUTCDate();
+const hours = date.getUTCHours();
+const minutes = date.getUTCMinutes();
 ---
 
 <section class="h-entry">
   <h1>
     {t("photos.picture-for-date")}{" "}
-    <time datetime={date.toISOString()} class="dt-published">
-      {dateTimeFormat.format(date)}
-    </time>
+    <a
+      href={`/${lang}/posts/photos/${year}/${month}/${dayOfMonth}/${hours}/${minutes}`}
+      class="u-url"
+    >
+      <time datetime={date.toISOString()} class="dt-published">
+        {dateTimeFormat.format(date)}
+      </time>
+    </a>
   </h1>
 
-  <p lang={langAttribute} class="p-content">
+  <p lang={langAttribute} class="e-content">
     {description?.value}
   </p>
 

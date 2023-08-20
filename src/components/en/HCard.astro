@@ -1,6 +1,15 @@
+---
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
 <section class="h-card">
-  <h1 class="p-given-name">
-    Hi, I'm <span translate="no">Sigmundur</span>
+  <h1>
+    Hi, I'm <span class="p-given-name p-sort-string" translate="no"
+      >Sigmundur</span
+    >
   </h1>
 
   <p>
@@ -37,9 +46,30 @@
 
   <p>
     I live in the <span class="p-country-name">Faroe Islands</span>, and I can
-    be contacted at <a href="mailto:contact@morkore.fo" rel="me" translate="no"
+    be contacted at <a href="mailto:contact@morkore.fo" rel="me" class="u-email"
       >contact@morkore.fo</a
     >.
+  </p>
+
+  <p>
+    You can also find me here:
+    <ul>
+      <li>
+        <a href="https://github.com/SigmundurMorkore" target="_blank" rel="me"
+          >@SigmundurMorkore {t("footer.on")}
+          <span translate="no">GitHub</span></a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.instagram.com/sigmundurmorkore/"
+          target="_blank"
+          rel="me"
+          >@sigmundurmorkore {t("footer.on")}
+          <span translate="no">Instagram</span></a
+        >
+      </li>
+    </ul>
   </p>
 
   <figure class="u-sound">
@@ -48,12 +78,7 @@
     </figcaption>
     <audio controls src="/name-pronounciation.mp3">
       <!-- TODO: add more sources -->
-      <track
-        default
-        kind="captions"
-        srclang="fo"
-        src="name-pronounciation.vtt"
-      />
+      <track default kind="captions" srclang="fo" />
       <p>Download <a href="/name-pronounciation.mp3">MP3</a></p>
     </audio>
   </figure>

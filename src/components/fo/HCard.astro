@@ -1,6 +1,15 @@
+---
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
 <section class="h-card">
   <h1>
-    Hey, eg eri <span class="p-given-name" translate="no">Sigmundur</span>
+    Hey, eg eri <span class="p-given-name p-sort-string" translate="no"
+      >Sigmundur</span
+    >
   </h1>
 
   <p>
@@ -42,9 +51,30 @@
   <p>
     Eg búgvi í <span class="p-country-name">Føroyum</span>, til ber at fáa fatur
     á mær á
-    <a href="mailto:samband@morkore.fo" rel="me" translate="no"
+    <a href="mailto:samband@morkore.fo" rel="me" translate="no" class="u-email"
       >samband@morkore.fo</a
     >.
+  </p>
+
+  <p>
+    Tú kanst eisini finna meg her:
+    <ul>
+      <li>
+        <a href="https://github.com/SigmundurMorkore" target="_blank" rel="me"
+          >@SigmundurMorkore {t("footer.on")}
+          <span translate="no">GitHub</span></a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.instagram.com/sigmundurmorkore/"
+          target="_blank"
+          rel="me"
+          >@sigmundurmorkore {t("footer.on")}
+          <span translate="no">Instagram</span></a
+        >
+      </li>
+    </ul>
   </p>
 </section>
 
